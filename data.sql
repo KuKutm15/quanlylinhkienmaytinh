@@ -1,5 +1,5 @@
-﻿insert into admin (email,matkhau,ten,sodienthoai) values ('thuannef','123','Phạm Trần Thanh Thuận','0965349315')
-insert into admin (email,matkhau,ten,sodienthoai) values ('thien','123','Phạm Trần Thanh Thuận','0965349315')
+﻿insert into admin (email,matkhau,ten,sodienthoai) values ('huutam','123','khonghuutam','0965349315')
+insert into admin (email,matkhau,ten,sodienthoai) values ('kiet','123','nguyen hoang anh kiet','0965349315')
 
 
 insert into nhomsanpham values ('RAM','Ram - Bộ nhớ trong')
