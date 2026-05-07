@@ -73,56 +73,6 @@ namespace LKMT.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Ảnh_chụp_màn_hình_2026_05_06_141205 {
-            get {
-                object obj = ResourceManager.GetObject("Ảnh chụp màn hình 2026-05-06 141205", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Ảnh_chụp_màn_hình_2026_05_06_141524 {
-            get {
-                object obj = ResourceManager.GetObject("Ảnh chụp màn hình 2026-05-06 141524", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Ảnh_chụp_màn_hình_2026_05_06_141657 {
-            get {
-                object obj = ResourceManager.GetObject("Ảnh chụp màn hình 2026-05-06 141657", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Ảnh_chụp_màn_hình_2026_05_06_141706 {
-            get {
-                object obj = ResourceManager.GetObject("Ảnh chụp màn hình 2026-05-06 141706", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Ảnh_chụp_màn_hình_2026_05_06_141937 {
-            get {
-                object obj = ResourceManager.GetObject("Ảnh chụp màn hình 2026-05-06 141937", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap bell {
             get {
                 object obj = ResourceManager.GetObject("bell", resourceCulture);
@@ -146,16 +96,6 @@ namespace LKMT.Properties {
         internal static System.Drawing.Bitmap logo {
             get {
                 object obj = ResourceManager.GetObject("logo", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap logoconpany {
-            get {
-                object obj = ResourceManager.GetObject("logoconpany", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

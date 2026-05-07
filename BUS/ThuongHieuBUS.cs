@@ -23,7 +23,7 @@ namespace BUS
         public void showListThuongHieu(DataGridView data)
         {
             var result = from a in DAO.ThuongHieuDAO.Instance.getListThuongHieu()
-                         select new { id_thuonghieu = a.id_thuonghieu, tenthuonghieu = a.tenthuonghieu, id_nhom = a.nhomsanpham.id_nhom, ngaytao = a.ngaytao, ngaycapnhat = a.ngaycapnhat};
+                         select new { id_thuonghieu = a.id_thuonghieu, tenthuonghieu = a.tenthuonghieu, id_nhom = a.nhomsanpham.id_nhom, ngaytao = a.ngaytao, ngaycapnhat = a.ngaycapnhat };
             data.DataSource = result.ToList();
         }
         public bool suaThuongHieu(int id, string tenth, ComboBox cboNhomSP, DateTime ngaytao)
@@ -72,7 +72,6 @@ namespace BUS
                 data.DataSource = list;
             }
         }
-
 
     }
 }

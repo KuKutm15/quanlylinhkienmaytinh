@@ -22,20 +22,20 @@ namespace BUS
         }
         public void showThanhToan(DataGridView data)
         {
-            var result = from a in DAO.ThanhToanDAO.Instance.getListThanhToan() select new { id = a.id_thanhtoan, tenthanhtoan = a.tenthanhtoan};
+            var result = from a in DAO.ThanhToanDAO.Instance.getListThanhToan() select new { id = a.id_thanhtoan, tenthanhtoan = a.tenthanhtoan };
             data.DataSource = result.ToList();
         }
         public bool suaThanhToan(int id, string ten)
         {
             DAO.phuongthucthanhtoan a = new DAO.phuongthucthanhtoan();
             a.id_thanhtoan = id;
-            a.tenthanhtoan = ten;          
+            a.tenthanhtoan = ten;
             return DAO.ThanhToanDAO.Instance.suaThanhToan(a);
         }
         public bool themThanhToan(string ten)
         {
             DAO.phuongthucthanhtoan a = new DAO.phuongthucthanhtoan();
-            a.tenthanhtoan = ten;         
+            a.tenthanhtoan = ten;
             return DAO.ThanhToanDAO.Instance.themThanhToan(a);
         }
         public bool xoaThanhToan(int id)
