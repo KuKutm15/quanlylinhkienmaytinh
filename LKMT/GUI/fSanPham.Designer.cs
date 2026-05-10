@@ -73,6 +73,8 @@
             this.txtNgayTao = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
+            this.btnLuu = new System.Windows.Forms.Button();
+            this.btnHuy = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSanPham)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nmrKhuyenMai)).BeginInit();
@@ -138,15 +140,17 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btnHuy);
+            this.groupBox1.Controls.Add(this.btnLuu);
             this.groupBox1.Controls.Add(this.btnThem);
             this.groupBox1.Controls.Add(this.btnXoa);
             this.groupBox1.Controls.Add(this.btnSua);
-            this.groupBox1.Location = new System.Drawing.Point(505, 692);
+            this.groupBox1.Location = new System.Drawing.Point(484, 688);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.groupBox1.Size = new System.Drawing.Size(353, 69);
+            this.groupBox1.Size = new System.Drawing.Size(491, 69);
             this.groupBox1.TabIndex = 38;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Tác vụ";
@@ -156,7 +160,7 @@
             this.btnThem.Location = new System.Drawing.Point(8, 23);
             this.btnThem.Margin = new System.Windows.Forms.Padding(4);
             this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(100, 28);
+            this.btnThem.Size = new System.Drawing.Size(82, 29);
             this.btnThem.TabIndex = 7;
             this.btnThem.Text = "Thêm";
             this.btnThem.UseVisualStyleBackColor = true;
@@ -164,10 +168,10 @@
             // 
             // btnXoa
             // 
-            this.btnXoa.Location = new System.Drawing.Point(239, 23);
+            this.btnXoa.Location = new System.Drawing.Point(194, 23);
             this.btnXoa.Margin = new System.Windows.Forms.Padding(4);
             this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(100, 28);
+            this.btnXoa.Size = new System.Drawing.Size(97, 27);
             this.btnXoa.TabIndex = 9;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = true;
@@ -175,10 +179,10 @@
             // 
             // btnSua
             // 
-            this.btnSua.Location = new System.Drawing.Point(123, 23);
+            this.btnSua.Location = new System.Drawing.Point(98, 23);
             this.btnSua.Margin = new System.Windows.Forms.Padding(4);
             this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(100, 28);
+            this.btnSua.Size = new System.Drawing.Size(88, 28);
             this.btnSua.TabIndex = 8;
             this.btnSua.Text = "Sửa";
             this.btnSua.UseVisualStyleBackColor = true;
@@ -550,6 +554,25 @@
             this.label12.TabIndex = 65;
             this.label12.Text = "*";
             // 
+            // btnLuu
+            // 
+            this.btnLuu.Location = new System.Drawing.Point(298, 22);
+            this.btnLuu.Name = "btnLuu";
+            this.btnLuu.Size = new System.Drawing.Size(90, 27);
+            this.btnLuu.TabIndex = 10;
+            this.btnLuu.Text = "Lưu";
+            this.btnLuu.UseVisualStyleBackColor = true;
+            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
+            // 
+            // btnHuy
+            // 
+            this.btnHuy.Location = new System.Drawing.Point(394, 22);
+            this.btnHuy.Name = "btnHuy";
+            this.btnHuy.Size = new System.Drawing.Size(87, 27);
+            this.btnHuy.TabIndex = 11;
+            this.btnHuy.Text = "Hủy";
+            this.btnHuy.UseVisualStyleBackColor = true;
+            // 
             // fSanPham
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -627,5 +650,7 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Button btnHuy;
+        private System.Windows.Forms.Button btnLuu;
     }
 }

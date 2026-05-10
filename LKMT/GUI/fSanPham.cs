@@ -210,5 +210,10 @@ namespace LKMT.GUI
             richMoTa.Text = null;
             pictureLinhKien.Image = null;
         }
+
+        private void btnLuu_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
