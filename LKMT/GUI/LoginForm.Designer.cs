@@ -42,6 +42,8 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnMinimize = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -121,13 +123,12 @@
             this.txtPassword.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtPassword.HideSelection = false;
-            this.txtPassword.Location = new System.Drawing.Point(479, 259);
+            this.txtPassword.Location = new System.Drawing.Point(571, 257);
             this.txtPassword.Margin = new System.Windows.Forms.Padding(4);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(239, 23);
+            this.txtPassword.Size = new System.Drawing.Size(161, 23);
             this.txtPassword.TabIndex = 2;
             this.txtPassword.TabStop = false;
-            this.txtPassword.Text = "Mật khẩu";
             this.txtPassword.UseSystemPasswordChar = true;
             this.txtPassword.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txtPassword_MouseClick);
             // 
@@ -147,19 +148,18 @@
             this.txtEmail.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtEmail.HideSelection = false;
-            this.txtEmail.Location = new System.Drawing.Point(479, 172);
+            this.txtEmail.Location = new System.Drawing.Point(570, 174);
             this.txtEmail.Margin = new System.Windows.Forms.Padding(4);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(239, 23);
+            this.txtEmail.Size = new System.Drawing.Size(160, 23);
             this.txtEmail.TabIndex = 1;
             this.txtEmail.TabStop = false;
-            this.txtEmail.Text = "Email";
             this.txtEmail.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txtEmail_MouseClick);
             // 
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(424, 246);
+            this.pictureBox3.Location = new System.Drawing.Point(370, 254);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(40, 37);
@@ -170,7 +170,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(423, 159);
+            this.pictureBox2.Location = new System.Drawing.Point(370, 167);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(40, 37);
@@ -208,6 +208,26 @@
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(417, 173);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(143, 22);
+            this.label2.TabIndex = 17;
+            this.label2.Text = "Tên Đăng Nhập:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(421, 258);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(91, 22);
+            this.label3.TabIndex = 18;
+            this.label3.Text = "Mật Khẩu:";
+            // 
             // LoginForm
             // 
             this.AcceptButton = this.btnDangNhap;
@@ -215,6 +235,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LemonChiffon;
             this.ClientSize = new System.Drawing.Size(835, 463);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.pictureBox3);
@@ -255,5 +277,7 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }

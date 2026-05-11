@@ -58,12 +58,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GUI\fKhachHang.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="GUI\fKhachHang.Designer.cs">
-      <DependentUpon>fKhachHang.cs</DependentUpon>
-    </Compile>
     <Compile Include="GUI\fLoaiSP.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -114,9 +108,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="GUI\fKhachHang.resx">
-      <DependentUpon>fKhachHang.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="GUI\fLoaiSP.resx">
       <DependentUpon>fLoaiSP.cs</DependentUpon>
     </EmbeddedResource>

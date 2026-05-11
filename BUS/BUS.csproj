@@ -45,7 +45,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DangNhapBUS.cs" />
-    <Compile Include="KhachHangBUS.cs" />
     <Compile Include="LoaiSanPhamBUS.cs" />
     <Compile Include="NhapKhoBUS.cs" />
     <Compile Include="NhomSanPhamBUS.cs" />

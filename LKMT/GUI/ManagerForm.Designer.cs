@@ -45,11 +45,9 @@
             this.btnSanPham = new System.Windows.Forms.Button();
             this.btnThuongHieu = new System.Windows.Forms.Button();
             this.btnThanhToan = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.PanelDropdown2 = new System.Windows.Forms.Panel();
-            this.btnXuatKho = new System.Windows.Forms.Button();
-            this.btnNhapKho = new System.Windows.Forms.Button();
             this.btnQLKho = new System.Windows.Forms.Button();
+            this.btnNhapKho = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.logocompany = new System.Windows.Forms.PictureBox();
             this.panelControl = new System.Windows.Forms.Panel();
@@ -158,7 +156,6 @@
             this.flowLayoutPanel1.Controls.Add(this.PanelDropdown);
             this.flowLayoutPanel1.Controls.Add(this.btnThuongHieu);
             this.flowLayoutPanel1.Controls.Add(this.btnThanhToan);
-            this.flowLayoutPanel1.Controls.Add(this.button2);
             this.flowLayoutPanel1.Controls.Add(this.PanelDropdown2);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 160);
             this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
@@ -257,7 +254,6 @@
             this.btnThuongHieu.Size = new System.Drawing.Size(227, 62);
             this.btnThuongHieu.TabIndex = 2;
             this.btnThuongHieu.Text = "    Quản lý Thương hiệu";
-            this.btnThuongHieu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnThuongHieu.UseVisualStyleBackColor = false;
             this.btnThuongHieu.Click += new System.EventHandler(this.btnThuongHieu_Click);
             // 
@@ -273,34 +269,15 @@
             this.btnThanhToan.Name = "btnThanhToan";
             this.btnThanhToan.Size = new System.Drawing.Size(231, 62);
             this.btnThanhToan.TabIndex = 13;
-            this.btnThanhToan.Text = "    Quản lý Thanh toán";
-            this.btnThanhToan.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnThanhToan.Text = "    Quản lý phương thức thanh toán";
             this.btnThanhToan.UseVisualStyleBackColor = false;
             this.btnThanhToan.Click += new System.EventHandler(this.btnThanhToan_Click);
             // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(4, 215);
-            this.button2.Margin = new System.Windows.Forms.Padding(4);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(231, 62);
-            this.button2.TabIndex = 14;
-            this.button2.Text = "    Quản lý Khách hàng";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click_1);
-            // 
             // PanelDropdown2
             // 
-            this.PanelDropdown2.Controls.Add(this.btnXuatKho);
-            this.PanelDropdown2.Controls.Add(this.btnNhapKho);
             this.PanelDropdown2.Controls.Add(this.btnQLKho);
-            this.PanelDropdown2.Location = new System.Drawing.Point(4, 285);
+            this.PanelDropdown2.Controls.Add(this.btnNhapKho);
+            this.PanelDropdown2.Location = new System.Drawing.Point(4, 215);
             this.PanelDropdown2.Margin = new System.Windows.Forms.Padding(4);
             this.PanelDropdown2.MaximumSize = new System.Drawing.Size(227, 164);
             this.PanelDropdown2.MinimumSize = new System.Drawing.Size(227, 64);
@@ -308,21 +285,22 @@
             this.PanelDropdown2.Size = new System.Drawing.Size(227, 64);
             this.PanelDropdown2.TabIndex = 12;
             // 
-            // btnXuatKho
+            // btnQLKho
             // 
-            this.btnXuatKho.BackColor = System.Drawing.Color.Gray;
-            this.btnXuatKho.FlatAppearance.BorderSize = 0;
-            this.btnXuatKho.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnXuatKho.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXuatKho.ForeColor = System.Drawing.Color.White;
-            this.btnXuatKho.Location = new System.Drawing.Point(0, 112);
-            this.btnXuatKho.Margin = new System.Windows.Forms.Padding(4);
-            this.btnXuatKho.Name = "btnXuatKho";
-            this.btnXuatKho.Size = new System.Drawing.Size(228, 49);
-            this.btnXuatKho.TabIndex = 3;
-            this.btnXuatKho.Text = "Xuất kho";
-            this.btnXuatKho.UseVisualStyleBackColor = false;
-            this.btnXuatKho.Click += new System.EventHandler(this.btnXuatKho_Click);
+            this.btnQLKho.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnQLKho.FlatAppearance.BorderSize = 0;
+            this.btnQLKho.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnQLKho.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnQLKho.ForeColor = System.Drawing.Color.White;
+            this.btnQLKho.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnQLKho.Location = new System.Drawing.Point(0, 0);
+            this.btnQLKho.Margin = new System.Windows.Forms.Padding(4);
+            this.btnQLKho.Name = "btnQLKho";
+            this.btnQLKho.Size = new System.Drawing.Size(232, 60);
+            this.btnQLKho.TabIndex = 1;
+            this.btnQLKho.Text = "Quản lý Kho";
+            this.btnQLKho.UseVisualStyleBackColor = false;
+            this.btnQLKho.Click += new System.EventHandler(this.btnQLKho_Click);
             // 
             // btnNhapKho
             // 
@@ -334,28 +312,11 @@
             this.btnNhapKho.Location = new System.Drawing.Point(0, 64);
             this.btnNhapKho.Margin = new System.Windows.Forms.Padding(4);
             this.btnNhapKho.Name = "btnNhapKho";
-            this.btnNhapKho.Size = new System.Drawing.Size(227, 48);
+            this.btnNhapKho.Size = new System.Drawing.Size(227, 58);
             this.btnNhapKho.TabIndex = 2;
             this.btnNhapKho.Text = "Nhập kho";
             this.btnNhapKho.UseVisualStyleBackColor = false;
             this.btnNhapKho.Click += new System.EventHandler(this.btnNhapKho_Click);
-            // 
-            // btnQLKho
-            // 
-            this.btnQLKho.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnQLKho.FlatAppearance.BorderSize = 0;
-            this.btnQLKho.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnQLKho.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnQLKho.ForeColor = System.Drawing.Color.White;
-            this.btnQLKho.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnQLKho.Location = new System.Drawing.Point(-4, 0);
-            this.btnQLKho.Margin = new System.Windows.Forms.Padding(4);
-            this.btnQLKho.Name = "btnQLKho";
-            this.btnQLKho.Size = new System.Drawing.Size(232, 60);
-            this.btnQLKho.TabIndex = 1;
-            this.btnQLKho.Text = "Quản lý Kho";
-            this.btnQLKho.UseVisualStyleBackColor = false;
-            this.btnQLKho.Click += new System.EventHandler(this.btnQLKho_Click);
             // 
             // panel1
             // 
@@ -433,12 +394,10 @@
         private System.Windows.Forms.Button btnQLSP;
         private System.Windows.Forms.Button btnThuongHieu;
         private System.Windows.Forms.Panel PanelDropdown2;
-        private System.Windows.Forms.Button btnXuatKho;
         private System.Windows.Forms.Button btnNhapKho;
         private System.Windows.Forms.Button btnQLKho;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panelControl;
         private System.Windows.Forms.Button btnThanhToan;
-        private System.Windows.Forms.Button button2;
     }
 }

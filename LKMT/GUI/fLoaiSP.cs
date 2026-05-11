@@ -46,7 +46,7 @@ namespace LKMT.GUI
 
             // Ô nhập liệu
             txtTenLoai.Enabled = isEditing;
-            cboNhomLK.Enabled = isEditing;
+            cboNhomLK.Enabled = true;
 
             // Chỉ cho nhập mã khi đang Thêm (tránh sửa nhầm mã cũ gây lỗi)
             txtMaLoai.Enabled = (isEditing && isThem);
@@ -76,7 +76,7 @@ namespace LKMT.GUI
                 {
                     DataGridViewRow row = dgvLoaiSP.Rows[e.RowIndex];
                     txtMaLoai.Text = row.Cells[0].Value.ToString();
-                    txtTenLoai.Text = row.Cells[1].Value.ToString();
+                    txtTenLoai.Text = row.Cells[2].Value.ToString();
                     NhomSanPhamBUS.Instance.showTenNhomToCBO(row.Cells[2].Value.ToString(), cboNhomLK);
                     txtNgayTao.Text = row.Cells[3].Value.ToString();
                     txtCapNhat.Text = row.Cells[4].Value.ToString();
@@ -177,7 +177,6 @@ namespace LKMT.GUI
 
             if (isThem)
             {
-                // ================= CODE THÊM MỚI =================
                 if (txtMaLoai.TextLength > 5)
                 {
                     MessageBox.Show("Mã không được vượt quá 5 ký tự!!", "Thông Báo", MessageBoxButtons.OK);
@@ -201,7 +200,6 @@ namespace LKMT.GUI
             }
             else
             {
-                // ================= CODE CẬP NHẬT (SỬA) =================
                 if (LoaiSanPhamBUS.Instance.suaLoaiSP(txtMaLoai.Text, cboNhomLK, txtTenLoai.Text, DateTime.Parse(txtNgayTao.Text)))
                 {
                     MessageBox.Show("Cập nhật thành công!!", "Thông Báo", MessageBoxButtons.OK);

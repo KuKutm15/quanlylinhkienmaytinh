@@ -68,9 +68,9 @@ namespace LKMT.GUI
             // Các ô nhập liệu
             txtTenLinhKien.Enabled = isEditing;
             txtGia.Enabled = isEditing;
-            cboNhomLK.Enabled = isEditing;
-            cboLoaiLK.Enabled = isEditing;
-            cboThuongHieu.Enabled = isEditing;
+            cboNhomLK.Enabled = true;
+            cboLoaiLK.Enabled = true;
+            cboThuongHieu.Enabled = true;
             nmrBaoHanh.Enabled = isEditing;
             nmrKhuyenMai.Enabled = isEditing;
             richMoTa.Enabled = isEditing;
@@ -237,12 +237,9 @@ namespace LKMT.GUI
 
             if (isThem == true)
             {
-                if (txtMaLinhKien.TextLength > 10)
-                {
-                    MessageBox.Show("Mã không được vượt quá 10 ký tự!!", "Thông Báo", MessageBoxButtons.OK);
+                if (txtTenLinhKien.TextLength == 0) { 
+                        MessageBox.Show("Tên không được bỏ trống!!", "Thông Báo", MessageBoxButtons.OK);
                 }
-                else if (txtTenLinhKien.TextLength == 0)
-                    MessageBox.Show("Tên không được bỏ trống!!", "Thông Báo", MessageBoxButtons.OK);
                 else if (txtGia.TextLength == 0)
                     MessageBox.Show("Giá không được bỏ trống!!", "Thông Báo", MessageBoxButtons.OK);
                 else if (cboLoaiLK.Text.Length == 0)
