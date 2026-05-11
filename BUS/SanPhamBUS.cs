@@ -43,19 +43,49 @@ namespace BUS
         }
         
         public void showImageToPictureBox(string imageName, PictureBox box)
+{
+    // Lấy đường dẫn chuẩn từ thư mục bin\Debug
+    string appPath = System.Windows.Forms.Application.StartupPath;
+    
+    // Đường dẫn tới ảnh thật
+    string imagePath = System.IO.Path.Combine(appPath, "image", imageName);
+    
+    // Đường dẫn tới ảnh mặc định (notfound.png)
+    string notFoundPath = System.IO.Path.Combine(appPath, "image", "notfound.png");
+
+    try
+    {
+        if (System.IO.File.Exists(imagePath))
         {
-            string imagePath = "..\\..\\image\\" + imageName;
-            if(File.Exists(imagePath))
+            // Dùng Stream để đọc ảnh giúp không bị khóa file
+            using (var fs = new System.IO.FileStream(imagePath, System.IO.FileMode.Open, System.IO.FileAccess.Read))
             {
-                box.Image = Image.FromFile(imagePath);
-                box.SizeMode = PictureBoxSizeMode.StretchImage;
+                box.Image = System.Drawing.Image.FromStream(fs);
+            }
+        }
+        else 
+        {
+            // Nếu không có ảnh thật thì load ảnh notfound.png
+            if (System.IO.File.Exists(notFoundPath))
+            {
+                using (var fs = new System.IO.FileStream(notFoundPath, System.IO.FileMode.Open, System.IO.FileAccess.Read))
+                {
+                    box.Image = System.Drawing.Image.FromStream(fs);
+                }
             }
             else
             {
-                box.Image = Image.FromFile("..\\..\\image\\notfound.png");
-                box.SizeMode = PictureBoxSizeMode.StretchImage;
-            }          
+                box.Image = null; // Lỡ xui xóa mất file notfound.png thì để trống luôn cho khỏi văng app
+            }
         }
+
+        box.SizeMode = PictureBoxSizeMode.StretchImage;
+    }
+    catch (Exception)
+    {
+        box.Image = null; // Tránh lỗi văng app nếu ảnh bị lỗi định dạng
+    }
+}
         public void showComboboxChanged(DataGridView data, ComboBox cboNhomSP, ComboBox cboLoai, ComboBox cboThuonghieu)
         {
             List<loaisanpham> listLoai = new List<loaisanpham>();

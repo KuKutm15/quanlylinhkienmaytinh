@@ -39,10 +39,10 @@
             this.button1 = new System.Windows.Forms.Button();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.PanelDropdown = new System.Windows.Forms.Panel();
+            this.btnQLSP = new System.Windows.Forms.Button();
             this.btnLoaiSP = new System.Windows.Forms.Button();
             this.btnNhomSP = new System.Windows.Forms.Button();
             this.btnSanPham = new System.Windows.Forms.Button();
-            this.btnQLSP = new System.Windows.Forms.Button();
             this.btnThuongHieu = new System.Windows.Forms.Button();
             this.btnThanhToan = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -160,7 +160,7 @@
             this.flowLayoutPanel1.Controls.Add(this.btnThanhToan);
             this.flowLayoutPanel1.Controls.Add(this.button2);
             this.flowLayoutPanel1.Controls.Add(this.PanelDropdown2);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(-1, 151);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 160);
             this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(233, 630);
@@ -168,10 +168,10 @@
             // 
             // PanelDropdown
             // 
+            this.PanelDropdown.Controls.Add(this.btnQLSP);
             this.PanelDropdown.Controls.Add(this.btnLoaiSP);
             this.PanelDropdown.Controls.Add(this.btnNhomSP);
             this.PanelDropdown.Controls.Add(this.btnSanPham);
-            this.PanelDropdown.Controls.Add(this.btnQLSP);
             this.PanelDropdown.Location = new System.Drawing.Point(4, 4);
             this.PanelDropdown.Margin = new System.Windows.Forms.Padding(4);
             this.PanelDropdown.MaximumSize = new System.Drawing.Size(227, 209);
@@ -179,6 +179,22 @@
             this.PanelDropdown.Name = "PanelDropdown";
             this.PanelDropdown.Size = new System.Drawing.Size(227, 63);
             this.PanelDropdown.TabIndex = 11;
+            // 
+            // btnQLSP
+            // 
+            this.btnQLSP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnQLSP.FlatAppearance.BorderSize = 0;
+            this.btnQLSP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnQLSP.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnQLSP.ForeColor = System.Drawing.Color.White;
+            this.btnQLSP.Location = new System.Drawing.Point(-1, -2);
+            this.btnQLSP.Margin = new System.Windows.Forms.Padding(4);
+            this.btnQLSP.Name = "btnQLSP";
+            this.btnQLSP.Size = new System.Drawing.Size(232, 65);
+            this.btnQLSP.TabIndex = 1;
+            this.btnQLSP.Text = "Quản lý Linh Kiện";
+            this.btnQLSP.UseVisualStyleBackColor = false;
+            this.btnQLSP.Click += new System.EventHandler(this.button2_Click);
             // 
             // btnLoaiSP
             // 
@@ -227,22 +243,6 @@
             this.btnSanPham.Text = "Linh Kiện";
             this.btnSanPham.UseVisualStyleBackColor = false;
             this.btnSanPham.Click += new System.EventHandler(this.btnSanPham_Click);
-            // 
-            // btnQLSP
-            // 
-            this.btnQLSP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnQLSP.FlatAppearance.BorderSize = 0;
-            this.btnQLSP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnQLSP.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnQLSP.ForeColor = System.Drawing.Color.White;
-            this.btnQLSP.Location = new System.Drawing.Point(-4, -1);
-            this.btnQLSP.Margin = new System.Windows.Forms.Padding(4);
-            this.btnQLSP.Name = "btnQLSP";
-            this.btnQLSP.Size = new System.Drawing.Size(232, 65);
-            this.btnQLSP.TabIndex = 1;
-            this.btnQLSP.Text = "Quản lý Linh Kiện";
-            this.btnQLSP.UseVisualStyleBackColor = false;
-            this.btnQLSP.Click += new System.EventHandler(this.button2_Click);
             // 
             // btnThuongHieu
             // 

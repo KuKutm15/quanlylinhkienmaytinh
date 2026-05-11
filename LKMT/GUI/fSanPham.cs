@@ -85,11 +85,12 @@ namespace LKMT.GUI
 
         private void btnChonHinh_Click(object sender, EventArgs e)
         {
-            // (Giữ nguyên toàn bộ code cũ)
-            openFileDialog1.InitialDirectory = "C://Desktop";
+            openFileDialog1.InitialDirectory = "C:\\Users\\LENOVO\\Pictures\\Camera Roll\\laptrinhwin";
             openFileDialog1.Title = "Select image to be upload.";
             openFileDialog1.Filter = "Image Only(*.jpg; *.jpeg; *.gif; *.bmp; *.png)|*.jpg; *.jpeg; *.gif; *.bmp; *.png";
             openFileDialog1.FilterIndex = 1;
+            openFileDialog1.RestoreDirectory = true; // Bắt buộc phải có để không lỗi đường dẫn hệ thống
+
             try
             {
                 if (openFileDialog1.ShowDialog() == System.Windows.Forms.DialogResult.OK)
@@ -98,9 +99,26 @@ namespace LKMT.GUI
                     {
                         path = System.IO.Path.GetFullPath(openFileDialog1.FileName);
                         string fileName = System.IO.Path.GetFileName(openFileDialog1.FileName);
-                        newPath = "..\\..\\image\\" + fileName;
+
+                        // Lấy thư mục bin\Debug đang chạy của App
+                        string appPath = Application.StartupPath;
+                        string imageFolder = System.IO.Path.Combine(appPath, "image");
+
+                        // Nếu thư mục image chưa có trong bin\Debug thì tự tạo luôn
+                        if (!System.IO.Directory.Exists(imageFolder))
+                        {
+                            System.IO.Directory.CreateDirectory(imageFolder);
+                        }
+
+                        // Ghép tên file vào đường dẫn
+                        newPath = System.IO.Path.Combine(imageFolder, fileName);
                         lbPath.Text = fileName;
-                        pictureLinhKien.Image = new Bitmap(openFileDialog1.FileName);
+
+                        // Chống khóa file ảnh (để lúc thêm/sửa/xóa không bị lỗi File in Use)
+                        using (var fs = new System.IO.FileStream(openFileDialog1.FileName, System.IO.FileMode.Open, System.IO.FileAccess.Read))
+                        {
+                            pictureLinhKien.Image = Image.FromStream(fs);
+                        }
                         pictureLinhKien.SizeMode = PictureBoxSizeMode.StretchImage;
                     }
                 }
@@ -214,9 +232,11 @@ namespace LKMT.GUI
         // CHỈNH SỬA: Đưa toàn bộ code Thêm/Sửa cũ của bạn vào nút Lưu này! Không sót 1 dòng!
         private void btnLuu_Click(object sender, EventArgs e)
         {
+            // [THÊM 1 DÒNG NÀY ĐỂ LƯU TẠM DỮ LIỆU ĐANG GÕ]: Vì lát nữa code của bạn gọi btnLamMoi sẽ xóa trắng các ô nên phải lưu trước.
+            string tenHoacMaCanTim = isThem ? txtTenLinhKien.Text : txtMaLinhKien.Text;
+
             if (isThem == true)
             {
-                // -- BẮT ĐẦU: Giữ nguyên logic cũ của nút btnThem --
                 if (txtMaLinhKien.TextLength > 10)
                 {
                     MessageBox.Show("Mã không được vượt quá 10 ký tự!!", "Thông Báo", MessageBoxButtons.OK);
@@ -243,15 +263,15 @@ namespace LKMT.GUI
                         }
                         path = null;
                         btnLamMoi_Click(sender, e);
-                        TrangThai(false); // Lưu xong thì khóa Form lại
+
+                        TrangThai(false); // Khóa form lại
+                        FocusVaoDongVuaThaoTac(tenHoacMaCanTim, 1); // Bôi xanh tìm theo tên (cột 1)
                     }
                     else MessageBox.Show("Thêm linh kiện thất bại!!", "Thông Báo", MessageBoxButtons.OK);
                 }
-                // -- KẾT THÚC: Logic cũ của nút btnThem --
             }
             else
             {
-                // -- BẮT ĐẦU: Giữ nguyên logic cũ của nút btnSua --
                 if (SanPhamBUS.Instance.suaSanPham(txtMaLinhKien.Text, txtTenLinhKien.Text, cboLoaiLK, decimal.Parse(txtGia.Text), cboThuongHieu, (int)nmrBaoHanh.Value, (int)nmrKhuyenMai.Value, lbPath.Text, richMoTa.Text, DateTime.Parse(txtNgayTao.Text)))
                 {
                     MessageBox.Show("Cập nhật thành công!!", "Thông Báo", MessageBoxButtons.OK);
@@ -264,10 +284,25 @@ namespace LKMT.GUI
                         }
                     }
                     btnLamMoi_Click(sender, e);
-                    TrangThai(false); // Lưu xong thì khóa Form lại
+
+                    TrangThai(false); // Khóa form lại
+                    FocusVaoDongVuaThaoTac(tenHoacMaCanTim, 0); // Bôi xanh tìm theo mã (cột 0)
                 }
                 else MessageBox.Show("Cập nhật thất bại!!", "Thông Báo", MessageBoxButtons.OK);
-                // -- KẾT THÚC: Logic cũ của nút btnSua --
+            }
+        }
+
+        private void FocusVaoDongVuaThaoTac(string giaTriCanTim, int cotTimKiem)
+        {
+            dgvSanPham.ClearSelection();
+            foreach (DataGridViewRow row in dgvSanPham.Rows)
+            {
+                if (row.Cells[cotTimKiem].Value != null && row.Cells[cotTimKiem].Value.ToString() == giaTriCanTim)
+                {
+                    row.Selected = true;
+                    dgvSanPham.CurrentCell = row.Cells[0];
+                    break;
+                }
             }
         }
 
