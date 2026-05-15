@@ -46,10 +46,10 @@ namespace LKMT.GUI
             {
                 if (NhapKhoBUS.Instance.themPhieuNhap(cboMaLK.Text, (int)nmrSoLuong.Value, decimal.Parse(txtGiaNhap.Text)))
                 {
-                    MessageBox.Show("Thêm phương thức thanh toán thành công!!", "Thông Báo", MessageBoxButtons.OK);
+                    MessageBox.Show("Thêm phiếu nhập thành công!!", "Thông Báo", MessageBoxButtons.OK);
                     NhapKhoBUS.Instance.showPhieuNhap(dgvPhieuNhap);
                 }
-                else MessageBox.Show("Thêm phương thức thanh toán sản phẩm thất bại!!", "Thông Báo", MessageBoxButtons.OK);
+                else MessageBox.Show("Thêm phiếu nhập thất bại!!", "Thông Báo", MessageBoxButtons.OK);
             }
         }
 
