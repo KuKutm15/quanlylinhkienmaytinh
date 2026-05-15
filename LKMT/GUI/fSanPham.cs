@@ -70,7 +70,7 @@ namespace LKMT.GUI
             txtGia.Enabled = isEditing;
             cboNhomLK.Enabled = true;
             cboLoaiLK.Enabled = true;
-            cboThuongHieu.Enabled = true;
+            cboThuongHieu.Enabled = isEditing;
             nmrBaoHanh.Enabled = isEditing;
             nmrKhuyenMai.Enabled = isEditing;
             richMoTa.Enabled = isEditing;

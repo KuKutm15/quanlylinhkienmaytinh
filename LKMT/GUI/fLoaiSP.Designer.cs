@@ -34,6 +34,8 @@
             this.ddd = new System.Windows.Forms.Label();
             this.dgvLoaiSP = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnHuy = new System.Windows.Forms.Button();
+            this.btnLuu = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnSua = new System.Windows.Forms.Button();
@@ -49,8 +51,6 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.btnHuy = new System.Windows.Forms.Button();
-            this.btnLuu = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLoaiSP)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -70,19 +70,20 @@
             // 
             // btnLamMoi
             // 
+            this.btnLamMoi.BackColor = System.Drawing.Color.Gray;
             this.btnLamMoi.Location = new System.Drawing.Point(343, 560);
-            this.btnLamMoi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnLamMoi.Margin = new System.Windows.Forms.Padding(4);
             this.btnLamMoi.Name = "btnLamMoi";
             this.btnLamMoi.Size = new System.Drawing.Size(100, 28);
             this.btnLamMoi.TabIndex = 27;
             this.btnLamMoi.Text = "Làm mới";
-            this.btnLamMoi.UseVisualStyleBackColor = true;
+            this.btnLamMoi.UseVisualStyleBackColor = false;
             this.btnLamMoi.Click += new System.EventHandler(this.btnLamMoi_Click);
             // 
             // txtNgayTao
             // 
             this.txtNgayTao.Location = new System.Drawing.Point(197, 223);
-            this.txtNgayTao.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNgayTao.Margin = new System.Windows.Forms.Padding(4);
             this.txtNgayTao.Name = "txtNgayTao";
             this.txtNgayTao.ReadOnly = true;
             this.txtNgayTao.Size = new System.Drawing.Size(229, 22);
@@ -102,7 +103,7 @@
             // 
             this.dgvLoaiSP.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvLoaiSP.Location = new System.Drawing.Point(19, 23);
-            this.dgvLoaiSP.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvLoaiSP.Margin = new System.Windows.Forms.Padding(4);
             this.dgvLoaiSP.Name = "dgvLoaiSP";
             this.dgvLoaiSP.RowHeadersWidth = 51;
             this.dgvLoaiSP.Size = new System.Drawing.Size(725, 478);
@@ -118,52 +119,79 @@
             this.groupBox1.Controls.Add(this.btnXoa);
             this.groupBox1.Controls.Add(this.btnSua);
             this.groupBox1.Location = new System.Drawing.Point(101, 593);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.groupBox1.Size = new System.Drawing.Size(353, 105);
             this.groupBox1.TabIndex = 21;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Tác vụ";
             // 
+            // btnHuy
+            // 
+            this.btnHuy.BackColor = System.Drawing.Color.Red;
+            this.btnHuy.Location = new System.Drawing.Point(190, 59);
+            this.btnHuy.Margin = new System.Windows.Forms.Padding(4);
+            this.btnHuy.Name = "btnHuy";
+            this.btnHuy.Size = new System.Drawing.Size(100, 28);
+            this.btnHuy.TabIndex = 13;
+            this.btnHuy.Text = "Hủy";
+            this.btnHuy.UseVisualStyleBackColor = false;
+            this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
+            // 
+            // btnLuu
+            // 
+            this.btnLuu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnLuu.Location = new System.Drawing.Point(62, 59);
+            this.btnLuu.Margin = new System.Windows.Forms.Padding(4);
+            this.btnLuu.Name = "btnLuu";
+            this.btnLuu.Size = new System.Drawing.Size(100, 28);
+            this.btnLuu.TabIndex = 12;
+            this.btnLuu.Text = "Lưu";
+            this.btnLuu.UseVisualStyleBackColor = false;
+            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
+            // 
             // btnThem
             // 
+            this.btnThem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btnThem.Location = new System.Drawing.Point(8, 23);
-            this.btnThem.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnThem.Margin = new System.Windows.Forms.Padding(4);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(100, 28);
             this.btnThem.TabIndex = 7;
             this.btnThem.Text = "Thêm";
-            this.btnThem.UseVisualStyleBackColor = true;
+            this.btnThem.UseVisualStyleBackColor = false;
             this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // btnXoa
             // 
+            this.btnXoa.BackColor = System.Drawing.Color.Red;
             this.btnXoa.Location = new System.Drawing.Point(239, 23);
-            this.btnXoa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnXoa.Margin = new System.Windows.Forms.Padding(4);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(100, 28);
             this.btnXoa.TabIndex = 9;
             this.btnXoa.Text = "Xóa";
-            this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.UseVisualStyleBackColor = false;
             this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnSua
             // 
+            this.btnSua.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.btnSua.Location = new System.Drawing.Point(123, 23);
-            this.btnSua.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSua.Margin = new System.Windows.Forms.Padding(4);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(100, 28);
             this.btnSua.TabIndex = 8;
             this.btnSua.Text = "Sửa";
-            this.btnSua.UseVisualStyleBackColor = true;
+            this.btnSua.UseVisualStyleBackColor = false;
             this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // txtTenLoai
             // 
             this.txtTenLoai.Location = new System.Drawing.Point(197, 162);
-            this.txtTenLoai.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTenLoai.Margin = new System.Windows.Forms.Padding(4);
             this.txtTenLoai.Name = "txtTenLoai";
             this.txtTenLoai.Size = new System.Drawing.Size(229, 22);
             this.txtTenLoai.TabIndex = 20;
@@ -171,7 +199,7 @@
             // txtMaLoai
             // 
             this.txtMaLoai.Location = new System.Drawing.Point(197, 102);
-            this.txtMaLoai.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtMaLoai.Margin = new System.Windows.Forms.Padding(4);
             this.txtMaLoai.Name = "txtMaLoai";
             this.txtMaLoai.ReadOnly = true;
             this.txtMaLoai.Size = new System.Drawing.Size(96, 22);
@@ -210,7 +238,7 @@
             // txtCapNhat
             // 
             this.txtCapNhat.Location = new System.Drawing.Point(197, 283);
-            this.txtCapNhat.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCapNhat.Margin = new System.Windows.Forms.Padding(4);
             this.txtCapNhat.Name = "txtCapNhat";
             this.txtCapNhat.ReadOnly = true;
             this.txtCapNhat.Size = new System.Drawing.Size(229, 22);
@@ -231,7 +259,7 @@
             this.cboNhomLK.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboNhomLK.FormattingEnabled = true;
             this.cboNhomLK.Location = new System.Drawing.Point(197, 39);
-            this.cboNhomLK.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cboNhomLK.Margin = new System.Windows.Forms.Padding(4);
             this.cboNhomLK.Name = "cboNhomLK";
             this.cboNhomLK.Size = new System.Drawing.Size(229, 24);
             this.cboNhomLK.TabIndex = 33;
@@ -242,9 +270,9 @@
             // 
             this.groupBox3.Controls.Add(this.dgvLoaiSP);
             this.groupBox3.Location = new System.Drawing.Point(509, 180);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox3.Size = new System.Drawing.Size(764, 518);
             this.groupBox3.TabIndex = 34;
             this.groupBox3.TabStop = false;
@@ -265,9 +293,9 @@
             this.groupBox2.Controls.Add(this.ddd);
             this.groupBox2.Controls.Add(this.txtNgayTao);
             this.groupBox2.Location = new System.Drawing.Point(27, 180);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox2.Size = new System.Drawing.Size(475, 368);
             this.groupBox2.TabIndex = 35;
             this.groupBox2.TabStop = false;
@@ -297,28 +325,6 @@
             this.label4.TabIndex = 18;
             this.label4.Text = "*";
             // 
-            // btnHuy
-            // 
-            this.btnHuy.Location = new System.Drawing.Point(190, 59);
-            this.btnHuy.Margin = new System.Windows.Forms.Padding(4);
-            this.btnHuy.Name = "btnHuy";
-            this.btnHuy.Size = new System.Drawing.Size(100, 28);
-            this.btnHuy.TabIndex = 13;
-            this.btnHuy.Text = "Hủy";
-            this.btnHuy.UseVisualStyleBackColor = true;
-            this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
-            // 
-            // btnLuu
-            // 
-            this.btnLuu.Location = new System.Drawing.Point(62, 59);
-            this.btnLuu.Margin = new System.Windows.Forms.Padding(4);
-            this.btnLuu.Name = "btnLuu";
-            this.btnLuu.Size = new System.Drawing.Size(100, 28);
-            this.btnLuu.TabIndex = 12;
-            this.btnLuu.Text = "Lưu";
-            this.btnLuu.UseVisualStyleBackColor = true;
-            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
-            // 
             // fLoaiSP
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -328,7 +334,7 @@
             this.Controls.Add(this.btnLamMoi);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label2);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "fLoaiSP";
             this.Size = new System.Drawing.Size(1292, 782);
             this.Load += new System.EventHandler(this.fLoaiSP_Load);

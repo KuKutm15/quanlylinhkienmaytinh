@@ -62,7 +62,7 @@ namespace DAO
         public bool xoaSanPham(string id)
         {
             sanpham a = findSanPham(id);
-            if (a != null && a.phieuxuats.Count == 0 && a.phieunhaps.Count == 0 && a.giohangs.Count == 0)
+            if (a != null)
             {
                 DataProvider.Ins.DB.sanphams.Remove(a);
                 DataProvider.Ins.DB.SaveChanges();

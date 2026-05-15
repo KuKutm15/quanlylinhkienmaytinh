@@ -154,8 +154,8 @@
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.Controls.Add(this.PanelDropdown);
-            this.flowLayoutPanel1.Controls.Add(this.btnThuongHieu);
             this.flowLayoutPanel1.Controls.Add(this.btnThanhToan);
+            this.flowLayoutPanel1.Controls.Add(this.btnThuongHieu);
             this.flowLayoutPanel1.Controls.Add(this.PanelDropdown2);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 160);
             this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
@@ -181,13 +181,15 @@
             // 
             this.btnQLSP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnQLSP.FlatAppearance.BorderSize = 0;
+            this.btnQLSP.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnQLSP.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.btnQLSP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnQLSP.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnQLSP.ForeColor = System.Drawing.Color.White;
-            this.btnQLSP.Location = new System.Drawing.Point(-1, -2);
+            this.btnQLSP.Location = new System.Drawing.Point(0, 4);
             this.btnQLSP.Margin = new System.Windows.Forms.Padding(4);
             this.btnQLSP.Name = "btnQLSP";
-            this.btnQLSP.Size = new System.Drawing.Size(232, 65);
+            this.btnQLSP.Size = new System.Drawing.Size(232, 67);
             this.btnQLSP.TabIndex = 1;
             this.btnQLSP.Text = "Quản lý Linh Kiện";
             this.btnQLSP.UseVisualStyleBackColor = false;
@@ -197,13 +199,15 @@
             // 
             this.btnLoaiSP.BackColor = System.Drawing.Color.Gray;
             this.btnLoaiSP.FlatAppearance.BorderSize = 0;
+            this.btnLoaiSP.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnLoaiSP.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.btnLoaiSP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLoaiSP.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLoaiSP.ForeColor = System.Drawing.Color.White;
             this.btnLoaiSP.Location = new System.Drawing.Point(0, 161);
             this.btnLoaiSP.Margin = new System.Windows.Forms.Padding(4);
             this.btnLoaiSP.Name = "btnLoaiSP";
-            this.btnLoaiSP.Size = new System.Drawing.Size(227, 49);
+            this.btnLoaiSP.Size = new System.Drawing.Size(227, 56);
             this.btnLoaiSP.TabIndex = 4;
             this.btnLoaiSP.Text = "Loại Linh Kiện";
             this.btnLoaiSP.UseVisualStyleBackColor = false;
@@ -213,6 +217,8 @@
             // 
             this.btnNhomSP.BackColor = System.Drawing.Color.Gray;
             this.btnNhomSP.FlatAppearance.BorderSize = 0;
+            this.btnNhomSP.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnNhomSP.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.btnNhomSP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNhomSP.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNhomSP.ForeColor = System.Drawing.Color.White;
@@ -229,6 +235,8 @@
             // 
             this.btnSanPham.BackColor = System.Drawing.Color.Gray;
             this.btnSanPham.FlatAppearance.BorderSize = 0;
+            this.btnSanPham.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnSanPham.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.btnSanPham.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSanPham.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSanPham.ForeColor = System.Drawing.Color.White;
@@ -245,10 +253,12 @@
             // 
             this.btnThuongHieu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnThuongHieu.FlatAppearance.BorderSize = 0;
+            this.btnThuongHieu.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnThuongHieu.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.btnThuongHieu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnThuongHieu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThuongHieu.ForeColor = System.Drawing.Color.White;
-            this.btnThuongHieu.Location = new System.Drawing.Point(4, 75);
+            this.btnThuongHieu.Location = new System.Drawing.Point(4, 145);
             this.btnThuongHieu.Margin = new System.Windows.Forms.Padding(4);
             this.btnThuongHieu.Name = "btnThuongHieu";
             this.btnThuongHieu.Size = new System.Drawing.Size(227, 62);
@@ -261,10 +271,12 @@
             // 
             this.btnThanhToan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnThanhToan.FlatAppearance.BorderSize = 0;
+            this.btnThanhToan.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnThanhToan.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.btnThanhToan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnThanhToan.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThanhToan.ForeColor = System.Drawing.Color.White;
-            this.btnThanhToan.Location = new System.Drawing.Point(4, 145);
+            this.btnThanhToan.Location = new System.Drawing.Point(4, 75);
             this.btnThanhToan.Margin = new System.Windows.Forms.Padding(4);
             this.btnThanhToan.Name = "btnThanhToan";
             this.btnThanhToan.Size = new System.Drawing.Size(231, 62);
@@ -289,6 +301,8 @@
             // 
             this.btnQLKho.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnQLKho.FlatAppearance.BorderSize = 0;
+            this.btnQLKho.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnQLKho.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.btnQLKho.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnQLKho.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnQLKho.ForeColor = System.Drawing.Color.White;
@@ -296,7 +310,7 @@
             this.btnQLKho.Location = new System.Drawing.Point(0, 0);
             this.btnQLKho.Margin = new System.Windows.Forms.Padding(4);
             this.btnQLKho.Name = "btnQLKho";
-            this.btnQLKho.Size = new System.Drawing.Size(232, 60);
+            this.btnQLKho.Size = new System.Drawing.Size(225, 64);
             this.btnQLKho.TabIndex = 1;
             this.btnQLKho.Text = "Quản lý Kho";
             this.btnQLKho.UseVisualStyleBackColor = false;
@@ -306,6 +320,8 @@
             // 
             this.btnNhapKho.BackColor = System.Drawing.Color.Gray;
             this.btnNhapKho.FlatAppearance.BorderSize = 0;
+            this.btnNhapKho.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnNhapKho.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.btnNhapKho.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNhapKho.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNhapKho.ForeColor = System.Drawing.Color.White;
@@ -335,16 +351,17 @@
             // 
             this.logocompany.BackColor = System.Drawing.Color.White;
             this.logocompany.Image = global::LKMT.Properties.Resources.logo;
-            this.logocompany.Location = new System.Drawing.Point(-13, 0);
+            this.logocompany.Location = new System.Drawing.Point(4, 0);
             this.logocompany.Margin = new System.Windows.Forms.Padding(4);
             this.logocompany.Name = "logocompany";
-            this.logocompany.Size = new System.Drawing.Size(247, 153);
+            this.logocompany.Size = new System.Drawing.Size(230, 160);
             this.logocompany.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.logocompany.TabIndex = 2;
             this.logocompany.TabStop = false;
             // 
             // panelControl
             // 
+            this.panelControl.BackColor = System.Drawing.Color.LemonChiffon;
             this.panelControl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelControl.Location = new System.Drawing.Point(233, 21);
             this.panelControl.Margin = new System.Windows.Forms.Padding(4);

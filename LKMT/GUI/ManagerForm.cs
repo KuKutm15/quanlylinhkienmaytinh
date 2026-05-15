@@ -25,6 +25,36 @@ namespace LKMT.GUI
 
 
         }
+       private void ActiveButton(object btnSender)
+        {
+            if (btnSender is Button currentBtn)
+            {
+                // 1. Khai báo danh sách TẤT CẢ các nút menu ông có
+                // Lưu ý: Hãy kiểm tra và sửa đúng tên (Name) của các button trong code của ông
+            List<Button> allMenuButtons = new List<Button> {
+                btnSanPham, btnNhomSP, btnLoaiSP, 
+                btnThanhToan,                             
+                btnThuongHieu,                             
+                btnNhapKho         
+            };
+
+                // 2. Thiết lập màu
+                Color mauNenMacDinh = Color.FromArgb(64, 64, 64); 
+                Color mauHighlight = Color.FromArgb(0, 192, 192); 
+
+                // 3. Reset toàn bộ nút về màu tối ban đầu
+                foreach (var btn in allMenuButtons)
+                {
+                    if (btn != null)
+                    {
+                        btn.BackColor = mauNenMacDinh;
+                    }
+                }
+
+                // 4. Chỉ nhuộm xanh duy nhất cái nút vừa bấm
+                currentBtn.BackColor = mauHighlight;
+            }
+        }
         private void btnClose_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -36,7 +66,8 @@ namespace LKMT.GUI
         }
 
         private void button2_Click(object sender, EventArgs e)
-        {         
+        {
+          
             timer1.Start();        
         }
 
@@ -86,6 +117,7 @@ namespace LKMT.GUI
 
         private void btnSanPham_Click(object sender, EventArgs e)
         {
+            ActiveButton(sender);
             fSanPham sp = new fSanPham();
             //fLoaiSP lsp = new fLoaiSP();
             //fNhomSP nsp = new fNhomSP();
@@ -94,12 +126,14 @@ namespace LKMT.GUI
 
         private void btnNhomSP_Click(object sender, EventArgs e)
         {
+            ActiveButton(sender);
             //fSanPham sp = new fSanPham();
             //fLoaiSP lsp = new fLoaiSP();
             showControl(nsp);
         }
         private void btnLoaiSP_Click(object sender, EventArgs e)
         {
+            ActiveButton(sender);
             //fSanPham sp = new fSanPham();
             fLoaiSP lsp = new fLoaiSP();
             //fNhomSP nsp = new fNhomSP();
@@ -114,6 +148,7 @@ namespace LKMT.GUI
 
         private void btnThuongHieu_Click(object sender, EventArgs e)
         {
+            ActiveButton(sender);
             fThuongHieu th = new fThuongHieu();
 
             showControl(th);
@@ -121,11 +156,12 @@ namespace LKMT.GUI
 
         private void button4_Click(object sender, EventArgs e)
         {
-
+            ActiveButton(sender);
         }
 
         private void btnQLKho_Click(object sender, EventArgs e)
         {
+            
             timer2.Start();
 
         }
@@ -154,6 +190,7 @@ namespace LKMT.GUI
 
         private void btnNhapKho_Click(object sender, EventArgs e)
         {
+            ActiveButton(sender);
             fNhapKho nk = new fNhapKho();
             showControl(nk);
         }
@@ -165,6 +202,7 @@ namespace LKMT.GUI
 
         private void btnThanhToan_Click(object sender, EventArgs e)
         {
+            ActiveButton(sender);
             showControl(tt);
         }
 
@@ -173,5 +211,6 @@ namespace LKMT.GUI
         {
 
         }
+
     }
 }
