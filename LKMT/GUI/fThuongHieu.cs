@@ -70,7 +70,7 @@ namespace LKMT.GUI
 
         private void dgvThuongHieu_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            Int32 selectedRowCount = dgvThuongHieu.Rows.GetRowCount(DataGridViewElementStates.Selected);
+            int selectedRowCount = dgvThuongHieu.Rows.GetRowCount(DataGridViewElementStates.Selected);
             if (selectedRowCount >= 1)
             {
                 if (e.RowIndex != -1)
@@ -104,7 +104,7 @@ namespace LKMT.GUI
         // CHỈNH SỬA: Nút Sửa mở khóa form để chỉnh sửa
         private void btnSua_Click(object sender, EventArgs e)
         {
-            Int32 selectedRowCount = dgvThuongHieu.Rows.GetRowCount(DataGridViewElementStates.Selected);
+            int selectedRowCount = dgvThuongHieu.Rows.GetRowCount(DataGridViewElementStates.Selected);
             if (selectedRowCount > 0)
             {
                 isThem = false; // Đánh dấu đang Sửa
@@ -119,7 +119,7 @@ namespace LKMT.GUI
         // CHỈNH SỬA: Gắn thêm hộp thoại hỏi Yes/No trước khi xóa
         private void btnXoa_Click(object sender, EventArgs e)
         {
-            Int32 selectedRowCount = dgvThuongHieu.Rows.GetRowCount(DataGridViewElementStates.Selected);
+            int selectedRowCount = dgvThuongHieu.Rows.GetRowCount(DataGridViewElementStates.Selected);
             if (selectedRowCount > 0)
             {
                 DialogResult result = MessageBox.Show("Bạn có chắc chắn muốn xóa thương hiệu này không?", "Xác nhận xóa", MessageBoxButtons.YesNo, MessageBoxIcon.Question);

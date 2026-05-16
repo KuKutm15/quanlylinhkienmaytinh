@@ -58,7 +58,7 @@ namespace LKMT.GUI
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
-            Int32 selectedRowCount = dgvNhomSP.Rows.GetRowCount(DataGridViewElementStates.Selected);
+            int selectedRowCount = dgvNhomSP.Rows.GetRowCount(DataGridViewElementStates.Selected);
             if (selectedRowCount >= 1)
             {
                 // Thêm xác nhận trước khi xóa
@@ -95,7 +95,7 @@ namespace LKMT.GUI
 
         private void btnSua_Click(object sender, EventArgs e)
         {
-            Int32 selectedRowCount = dgvNhomSP.Rows.GetRowCount(DataGridViewElementStates.Selected);
+            int selectedRowCount = dgvNhomSP.Rows.GetRowCount(DataGridViewElementStates.Selected);
             if (selectedRowCount > 0)
             {
                 isThem = false; // Đánh dấu là đang Sửa
@@ -109,7 +109,7 @@ namespace LKMT.GUI
 
         private void dgvNhomSP_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            Int32 selectedRowCount = dgvNhomSP.Rows.GetRowCount(DataGridViewElementStates.Selected);
+            int selectedRowCount = dgvNhomSP.Rows.GetRowCount(DataGridViewElementStates.Selected);
             if (selectedRowCount >0)
             {
                 if (e.RowIndex != -1)

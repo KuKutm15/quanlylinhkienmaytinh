@@ -136,7 +136,7 @@ namespace LKMT.GUI
         private void dgvSanPham_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             // (Giữ nguyên toàn bộ code cũ)
-            Int32 selectedRowCount = dgvSanPham.Rows.GetRowCount(DataGridViewElementStates.Selected);
+            int selectedRowCount = dgvSanPham.Rows.GetRowCount(DataGridViewElementStates.Selected);
             if (selectedRowCount > 0)
             {
                 if (e.RowIndex != -1)
@@ -184,7 +184,7 @@ namespace LKMT.GUI
         // CHỈNH SỬA: Nút sửa bây giờ chỉ làm nhiệm vụ mở khóa Form để người dùng sửa nội dung
         private void btnSua_Click(object sender, EventArgs e)
         {
-            Int32 selectedRowCount = dgvSanPham.Rows.GetRowCount(DataGridViewElementStates.Selected);
+            int selectedRowCount = dgvSanPham.Rows.GetRowCount(DataGridViewElementStates.Selected);
             if (selectedRowCount > 0)
             {
                 isThem = false; // Đánh dấu là đang Sửa

@@ -67,7 +67,7 @@ namespace LKMT.GUI
 
         private void dgvPhieuNhap_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            Int32 selectedRowCount = dgvPhieuNhap.Rows.GetRowCount(DataGridViewElementStates.Selected);
+            int selectedRowCount = dgvPhieuNhap.Rows.GetRowCount(DataGridViewElementStates.Selected);
             if (selectedRowCount >= 1)
             {
                 if (e.RowIndex != -1)
