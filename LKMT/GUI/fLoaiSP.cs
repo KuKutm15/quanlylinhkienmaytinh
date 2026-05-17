@@ -106,7 +106,7 @@ namespace LKMT.GUI
         // CHỈNH SỬA: Nút Sửa mở form để chỉnh sửa
         private void btnSua_Click(object sender, EventArgs e)
         {
-            Int32 selectedRowCount = dgvLoaiSP.Rows.GetRowCount(DataGridViewElementStates.Selected);
+            int selectedRowCount = dgvLoaiSP.Rows.GetRowCount(DataGridViewElementStates.Selected);
             if (selectedRowCount > 0)
             {
                 isThem = false; // Đánh dấu là đang sửa
@@ -129,7 +129,7 @@ namespace LKMT.GUI
         // CHỈNH SỬA: Gắn thêm thông báo hỏi Yes/No trước khi Xóa
         private void btnXoa_Click(object sender, EventArgs e)
         {
-            Int32 selectedRowCount = dgvLoaiSP.Rows.GetRowCount(DataGridViewElementStates.Selected);
+            int selectedRowCount = dgvLoaiSP.Rows.GetRowCount(DataGridViewElementStates.Selected);
             if (selectedRowCount > 0)
             {
                 DialogResult result = MessageBox.Show("Bạn có chắc chắn muốn xóa loại linh kiện này không?", "Xác nhận xóa", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
