@@ -43,6 +43,7 @@ namespace LKMT.GUI
                 MessageBox.Show("Vui lòng nhập số lượng linh kiện muốn nhập!", "Thông Báo", MessageBoxButtons.OK);
             else if(txtGiaNhap.TextLength == 0)
                 MessageBox.Show("Vui lòng nhập giá nhập linh kiện này!", "Thông Báo", MessageBoxButtons.OK);
+            else
             {
                 if (NhapKhoBUS.Instance.themPhieuNhap(cboMaLK.Text, (int)nmrSoLuong.Value, decimal.Parse(txtGiaNhap.Text)))
                 {
