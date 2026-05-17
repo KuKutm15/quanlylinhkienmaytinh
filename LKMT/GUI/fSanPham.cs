@@ -53,7 +53,7 @@ namespace LKMT.GUI
             TrangThai(false);
         }
 
-        // --- HÀM MỚI: Dùng để khóa/mở các nút và ô textbox ---
+        // : Dùng để khóa/mở các nút và ô textbox ---
         private void TrangThai(bool isEditing)
         {
             // Các nút thao tác
@@ -61,9 +61,7 @@ namespace LKMT.GUI
             btnSua.Enabled = !isEditing;
             btnXoa.Enabled = !isEditing;
             btnLuu.Enabled = isEditing;
-
-            // Nếu trên giao diện có nút Hủy thì bạn bỏ comment dòng dưới nhé:
-            // btnHuy.Enabled = isEditing;
+            btnHuy.Enabled = isEditing;
 
             // Các ô nhập liệu
             txtTenLinhKien.Enabled = isEditing;
