@@ -83,5 +83,15 @@ namespace LKMT.GUI
                 }
             }
         }
+
+        private void btnLamMoi_Click(object sender, EventArgs e)
+        {
+            txtMaPhieuNhap.Text = null;
+            cboTenLK.Text =null; 
+            cboMaLK.Text=null;
+            txtGiaNhap.Text = null;
+            txtNgayNhap.Text = null;
+            nmrSoLuong.Value = 0;
+        }
     }
 }

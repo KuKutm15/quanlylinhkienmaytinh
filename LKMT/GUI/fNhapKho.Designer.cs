@@ -77,9 +77,9 @@
             this.groupBox2.Controls.Add(this.txtMaPhieuNhap);
             this.groupBox2.Controls.Add(this.ddd);
             this.groupBox2.Location = new System.Drawing.Point(23, 206);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox2.Size = new System.Drawing.Size(475, 368);
             this.groupBox2.TabIndex = 40;
             this.groupBox2.TabStop = false;
@@ -101,7 +101,7 @@
             this.cboMaLK.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cboMaLK.FormattingEnabled = true;
             this.cboMaLK.Location = new System.Drawing.Point(167, 105);
-            this.cboMaLK.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cboMaLK.Margin = new System.Windows.Forms.Padding(4);
             this.cboMaLK.Name = "cboMaLK";
             this.cboMaLK.Size = new System.Drawing.Size(229, 24);
             this.cboMaLK.TabIndex = 46;
@@ -137,7 +137,7 @@
             this.cboTenLK.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cboTenLK.FormattingEnabled = true;
             this.cboTenLK.Location = new System.Drawing.Point(167, 156);
-            this.cboTenLK.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cboTenLK.Margin = new System.Windows.Forms.Padding(4);
             this.cboTenLK.Name = "cboTenLK";
             this.cboTenLK.Size = new System.Drawing.Size(229, 24);
             this.cboTenLK.TabIndex = 49;
@@ -156,7 +156,7 @@
             // nmrSoLuong
             // 
             this.nmrSoLuong.Location = new System.Drawing.Point(165, 215);
-            this.nmrSoLuong.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.nmrSoLuong.Margin = new System.Windows.Forms.Padding(4);
             this.nmrSoLuong.Name = "nmrSoLuong";
             this.nmrSoLuong.Size = new System.Drawing.Size(60, 22);
             this.nmrSoLuong.TabIndex = 43;
@@ -176,7 +176,7 @@
             // txtGiaNhap
             // 
             this.txtGiaNhap.Location = new System.Drawing.Point(165, 268);
-            this.txtGiaNhap.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtGiaNhap.Margin = new System.Windows.Forms.Padding(4);
             this.txtGiaNhap.Name = "txtGiaNhap";
             this.txtGiaNhap.Size = new System.Drawing.Size(147, 22);
             this.txtGiaNhap.TabIndex = 41;
@@ -206,7 +206,7 @@
             // txtNgayNhap
             // 
             this.txtNgayNhap.Location = new System.Drawing.Point(167, 325);
-            this.txtNgayNhap.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNgayNhap.Margin = new System.Windows.Forms.Padding(4);
             this.txtNgayNhap.Name = "txtNgayNhap";
             this.txtNgayNhap.ReadOnly = true;
             this.txtNgayNhap.Size = new System.Drawing.Size(229, 22);
@@ -235,7 +235,7 @@
             // txtMaPhieuNhap
             // 
             this.txtMaPhieuNhap.Location = new System.Drawing.Point(165, 49);
-            this.txtMaPhieuNhap.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtMaPhieuNhap.Margin = new System.Windows.Forms.Padding(4);
             this.txtMaPhieuNhap.Name = "txtMaPhieuNhap";
             this.txtMaPhieuNhap.ReadOnly = true;
             this.txtMaPhieuNhap.Size = new System.Drawing.Size(96, 22);
@@ -255,9 +255,9 @@
             // 
             this.groupBox3.Controls.Add(this.dgvPhieuNhap);
             this.groupBox3.Location = new System.Drawing.Point(505, 206);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox3.Size = new System.Drawing.Size(764, 518);
             this.groupBox3.TabIndex = 39;
             this.groupBox3.TabStop = false;
@@ -267,7 +267,7 @@
             // 
             this.dgvPhieuNhap.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvPhieuNhap.Location = new System.Drawing.Point(19, 23);
-            this.dgvPhieuNhap.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvPhieuNhap.Margin = new System.Windows.Forms.Padding(4);
             this.dgvPhieuNhap.Name = "dgvPhieuNhap";
             this.dgvPhieuNhap.RowHeadersWidth = 51;
             this.dgvPhieuNhap.Size = new System.Drawing.Size(725, 478);
@@ -277,21 +277,24 @@
             // btnLamMoi
             // 
             this.btnLamMoi.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.btnLamMoi.FlatAppearance.BorderSize = 0;
+            this.btnLamMoi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLamMoi.Location = new System.Drawing.Point(364, 620);
-            this.btnLamMoi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnLamMoi.Margin = new System.Windows.Forms.Padding(4);
             this.btnLamMoi.Name = "btnLamMoi";
             this.btnLamMoi.Size = new System.Drawing.Size(100, 28);
             this.btnLamMoi.TabIndex = 38;
             this.btnLamMoi.Text = "Làm mới";
             this.btnLamMoi.UseVisualStyleBackColor = false;
+            this.btnLamMoi.Click += new System.EventHandler(this.btnLamMoi_Click);
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.btnNhapKho);
             this.groupBox1.Location = new System.Drawing.Point(204, 597);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.groupBox1.Size = new System.Drawing.Size(132, 69);
             this.groupBox1.TabIndex = 37;
@@ -301,8 +304,10 @@
             // btnNhapKho
             // 
             this.btnNhapKho.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnNhapKho.FlatAppearance.BorderSize = 0;
+            this.btnNhapKho.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNhapKho.Location = new System.Drawing.Point(19, 23);
-            this.btnNhapKho.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnNhapKho.Margin = new System.Windows.Forms.Padding(4);
             this.btnNhapKho.Name = "btnNhapKho";
             this.btnNhapKho.Size = new System.Drawing.Size(100, 28);
             this.btnNhapKho.TabIndex = 7;
@@ -314,7 +319,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(493, 58);
+            this.label2.Location = new System.Drawing.Point(445, 88);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(216, 52);
@@ -330,7 +335,7 @@
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label2);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "fNhapKho";
             this.Size = new System.Drawing.Size(1292, 782);
             this.groupBox2.ResumeLayout(false);
