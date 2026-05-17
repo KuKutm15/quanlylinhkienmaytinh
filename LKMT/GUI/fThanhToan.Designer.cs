@@ -183,7 +183,7 @@
             // 
             // btnHuy
             // 
-            this.btnHuy.BackColor = System.Drawing.Color.Red;
+            this.btnHuy.BackColor = System.Drawing.Color.White;
             this.btnHuy.Location = new System.Drawing.Point(175, 63);
             this.btnHuy.Name = "btnHuy";
             this.btnHuy.Size = new System.Drawing.Size(87, 27);
@@ -194,7 +194,7 @@
             // 
             // btnLuu
             // 
-            this.btnLuu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnLuu.BackColor = System.Drawing.Color.White;
             this.btnLuu.Location = new System.Drawing.Point(79, 63);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(90, 27);

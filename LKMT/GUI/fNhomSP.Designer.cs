@@ -151,7 +151,7 @@
             // 
             // btnHuy
             // 
-            this.btnHuy.BackColor = System.Drawing.Color.Red;
+            this.btnHuy.BackColor = System.Drawing.Color.White;
             this.btnHuy.Location = new System.Drawing.Point(188, 70);
             this.btnHuy.Margin = new System.Windows.Forms.Padding(4);
             this.btnHuy.Name = "btnHuy";
@@ -163,7 +163,7 @@
             // 
             // btnLuu
             // 
-            this.btnLuu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnLuu.BackColor = System.Drawing.Color.White;
             this.btnLuu.Location = new System.Drawing.Point(60, 70);
             this.btnLuu.Margin = new System.Windows.Forms.Padding(4);
             this.btnLuu.Name = "btnLuu";
