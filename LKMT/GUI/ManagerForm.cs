@@ -29,8 +29,7 @@ namespace LKMT.GUI
         {
             if (btnSender is Button currentBtn)
             {
-                // 1. Khai báo danh sách TẤT CẢ các nút menu ông có
-                // Lưu ý: Hãy kiểm tra và sửa đúng tên (Name) của các button trong code của ông
+                // 1. Khai báo danh sách TẤT CẢ các nút menu 
             List<Button> allMenuButtons = new List<Button> {
                 btnSanPham, btnNhomSP, btnLoaiSP, 
                 btnThanhToan,                             
